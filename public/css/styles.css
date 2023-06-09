@@ -8,6 +8,31 @@ main #section-two {
   color: green;
 }
 
+main #section-one {
+  color: #266;
+  border: 2px solid;
+  font-size: large;
+  font-family: Courier New;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+main #section-two {
+  color: green;
+  border: 1px solid;
+  font-size: medium;
+  font-family: Arial;
+  text-decoration: double;
+  margin-top: 6 px;
+}
+main #section-three {
+  color: #a40d0d;
+  border: 3px solid;
+  font-size: small;
+  font-family: Georgia;
+  text-decoration: overline;
+  margin-top: 12px;
+}
+
 body {
   background-color: burlywood;
 }

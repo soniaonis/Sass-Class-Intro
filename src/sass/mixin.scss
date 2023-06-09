@@ -1,15 +1,25 @@
-.section-one {
-    background-color: rgb(23, 27, 23);
-    text-shadow: rgb(49, 26, 49);
+@use 'sections';
+@import 'variables';
 
+@mixin sections ($color, $border, $size, $font, $textDecoration, $marginTop) {
+    color: $color;
+    border: $border;
+    font-size: $size;
+    font-family: $font;
+    text-decoration: $textDecoration;
+    margin-top: $marginTop;
 }
 
-.section-two {
-    background-color: rgb(23, 12, 78);
-    text-shadow: rgb(162, 177, 98); 
-}
+ main {
+    #section-one {
+    @include sections(#266, 2px solid, large, Courier New, underline, 10px);
+    }
 
-.section-three {
-    background-color: rgb(15, 45, 15);
-    text-shadow: rgb(49, 26, 49);
+    #section-two {
+    @include sections(green, 1px solid, medium, Arial, double, 6 px);
+    }
+
+    #section-three {
+    @include sections(#a40d0d, 3px solid, small, Georgia, overline, 12px);
+    }
 }
